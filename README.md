@@ -2,7 +2,7 @@
 A Terraform module for creating AWS web application servers with a launch configuration and a Auto Scaling Group(ASG) for it, with a Elastic Load Balancer(ELB) in a Virtual Private Cloud(VPC).
   * To launch a VPC with a configuration to scale the subnets for future growth.
   * Configuration includes a public and a private subnets, where private is associated with backend instances and end users contact the public facing load balancer.
-  * Security group designed for all teh insatnces in the ASG ehich allows minimal ports for communication and backend management.
+  * Security group designed for all the instances in the ASG which allows minimal ports for communication and backend management.
   * The AWS generated load balancer DNS name will be used for accessing the public facing web application.
   * The ASG utilizes the lastest AMI and contains a root and two EBS volumes for apps and logs mounted , the data is encrypted at rest.
   * The ASG automatically scales and removes nodes based on the alarm mechanism from cloudwatch for CPU utilization.
