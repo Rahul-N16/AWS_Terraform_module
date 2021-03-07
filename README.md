@@ -29,4 +29,10 @@ A Terraform module for creating AWS web application servers with a launch config
 
 * [elb-dns-name] - Load Balancer DNS name. To be used for accessing the public facing web application.
 
+# Design updates
+
+* NAT gateway was used since it has no maintenace compared to NAT instance. NAT gateway was used for the backend servers to get updates.
+* The filesystem /apps & /logs were mounted from the boot_script install_httpd.sh to be mounted from teh EBS volumes attached.
+* CPU Utilization is used to scale up  and scale down the insatnces in the Auto Scaling Group.
+
 
