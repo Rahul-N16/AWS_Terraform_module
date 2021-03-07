@@ -31,8 +31,8 @@ A Terraform module for creating AWS web application servers with a launch config
 
 # Design updates
 
-* NAT gateway was used since it has no maintenace compared to NAT instance. NAT gateway was used for the backend servers to get updates.
-* The filesystem /apps & /logs were mounted from the boot_script install_httpd.sh to be mounted from teh EBS volumes attached.
-* CPU Utilization is used to scale up  and scale down the insatnces in the Auto Scaling Group.
+* NAT gateway was used since it has no maintenace compared to NAT instance. NAT gateway was used for the backend servers to get updates and security patches.
+* The filesystems /apps & /logs were mounted from the boot_script install_httpd.sh with the EBS volumes attached.
+* CPU Utilization is used to scale up and scale down the insatnces in the Auto Scaling Group.
 
 
