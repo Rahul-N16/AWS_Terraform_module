@@ -1,5 +1,5 @@
 # AWS_Terraform_module
-A Terraform module for creating an AWS web application server with a launch configuration and a launch configuration for it, with a Elastic Load Balancer in a VPC.
+A Terraform module for creating AWS web application servers with a launch configuration and a Auto Scaling Group(ASG) for it, with a Elastic Load Balancer(ELB) in a Virtual Private Cloud(VPC).
   * To launch a VPC with a configuration to scale the subnets for future growth.
   * Configuration includes a public and a private subnets, where private is associated with backend instances and end users contact the public facing load balancer.
   * Security group designed for all teh insatnces in the ASG ehich allows minimal ports for communication and backend management.
