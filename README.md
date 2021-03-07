@@ -10,7 +10,7 @@ A Terraform module for creating an AWS web application server with a launch conf
 # Inputs
 
 * [aws_access_key] - Access_key need to be provided for the launch configuration.
-* aws_secret_key - AWS secret key need to be provided for the launc configuration.
+* <aws_secret_key> - AWS secret key need to be provided for the launc configuration.
 * instance_type - Instance type is appropriate mix of resources for your applications and computing needs
 * security_group - The Security Group ID that instances in the ASG
 * user_data - The path to the user_data file for the Launch Configuration.Terraform will include the contents of this file in the Launch Configuration.
