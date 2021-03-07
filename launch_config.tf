@@ -4,7 +4,7 @@ resource "aws_launch_configuration" "webserver" {
   instance_type          = "t2.micro"
   security_groups        = [aws_security_group.webservers.id]
  # associate_public_ip_address = true
-  user_data = file("/Terraform/Web-Application/install_httpd.sh")
+  user_data = file("${path.cwd}/install_httpd.sh")
   lifecycle {
     create_before_destroy = true
   }
