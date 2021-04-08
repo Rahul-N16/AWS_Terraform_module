@@ -1,4 +1,4 @@
-#Autoscale the instaces with Autoscaling policies
+#Autoscale the instances with Autoscaling policies
 
 locals  {
   terraform_subnet_ids  = aws_subnet.private.*.id
